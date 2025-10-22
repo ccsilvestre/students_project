@@ -1,4 +1,3 @@
-/* ===== Global & layout ===== */
 :root {
   --pink-600: #ff5bb8;
   --pink-700: #ff2c99;
@@ -18,7 +17,7 @@ body {
   justify-content: center;
 }
 
-/* outer wrapper centers card */
+
 .app {
   width: 100%;
   display: flex;
@@ -27,7 +26,7 @@ body {
   padding: 24px;
 }
 
-/* main card */
+
 .card {
   background: #fff;
   border-radius: 18px;
@@ -40,7 +39,7 @@ body {
   z-index: 3;
 }
 
-/* title */
+
 .title {
   color: var(--pink-700);
   font-size: 1.6rem;
@@ -52,7 +51,7 @@ body {
   gap: 10px;
 }
 
-/* search */
+
 .search-wrapper { margin-bottom: 14px; display: flex; justify-content: center; }
 .search-box { position: relative; width: 100%; max-width: 360px; }
 .search-input {
@@ -70,10 +69,10 @@ body {
   border-color: rgba(255, 105, 180, 0.4);
 }
 
-/* remove browser default search clear button */
+
 input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
 
-/* our single clear icon inside input */
+
 .clear-icon {
   position: absolute;
   right: 10px;
@@ -89,10 +88,10 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 }
 .clear-icon:hover { background: rgba(251, 215, 239, 0.936); color: var(--pink-700); }
 
-/* results summary */
+
 .results-summary { font-size: 0.95rem; color: #704f62; margin-bottom: 12px; }
 
-/* list */
+
 .student-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .student-item {
   background: linear-gradient(180deg, #ffb0d2, #FFC0CB);
@@ -111,7 +110,7 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .student-name { font-weight: 700; color: #73606b; }
 .student-course { color: #706168; font-size: 0.9rem; margin-top: 3px; }
 
-/* view button */
+
 .view-btn {
   background: var(--pink-600);
   color: #fff;
@@ -127,10 +126,10 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 }
 .view-btn:hover { background: var(--pink-700); transform: translateY(-1px); }
 
-/* loading / no results */
+
 .loading-text { color: #c2789d; }
 
-/* modal overlay + card */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -174,11 +173,11 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 }
 .close-btn:hover { background: #ff2c99; }
 
-/* small animations */
+
 @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
 @keyframes slideUp { from { transform: translateY(10px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
 
-/* Responsive */
+
 @media (max-width: 480px) {
   .card { width: 92%; padding: 20px; }
   .profile-card { width: 90%; padding: 18px; }
